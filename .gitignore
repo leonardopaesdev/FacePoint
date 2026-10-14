@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.vite/
+.venv/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+.pytest_cache/
+.coverage
+.env
+backend/data/
+*.sqlite3
+.DS_Store
+Thumbs.db
+frontend/vite.config.js
+frontend/vite.config.d.ts

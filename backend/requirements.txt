@@ -1,0 +1,7 @@
+fastapi==0.143.1
+uvicorn[standard]==0.54.0
+python-multipart==0.0.22
+pillow==12.1.1
+deepface==0.0.102
+pytest==9.0.2
+httpx==0.28.1
