@@ -105,7 +105,9 @@ export function CameraCapture({ onCapture, compact = false }: CameraCaptureProps
     starting: "Iniciando a câmera...",
     ready: "CÂMERA ATIVA · AGUARDANDO ROSTO",
     denied: "Permissão bloqueada. Redefina a câmera no navegador e tente novamente.",
-    unavailable: "Nenhuma câmera disponível. Use uma imagem do dispositivo.",
+    unavailable: window.isSecureContext
+      ? "Nenhuma câmera disponível. Use uma imagem do dispositivo."
+      : "A câmera exige HTTPS. Acesse o app por um endereço https:// e aceite o certificado.",
     busy: "A câmera está ocupada. Feche outro aplicativo ou aba que esteja usando a webcam.",
     error: "O navegador não conseguiu iniciar a câmera. Tente novamente ou selecione uma imagem.",
   }[cameraState];
